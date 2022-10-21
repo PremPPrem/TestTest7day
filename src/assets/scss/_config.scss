@@ -1,0 +1,70 @@
+$whitesmoke: #f5f5f5;
+$green: #067800;
+$greenopacity: rgba(6, 120, 0, 0.8);
+$line-color: #057351;
+$green-hover: #03fc77;
+$black: #000;
+$white: #fff;
+$light-color: #181818;
+$title-color: #49497e;
+$footer-color: #191919;
+$gray: #6D7781;
+$box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+$input-focus: 2px solid $black;
+
+@mixin button-ctn {
+    padding: 8px 15px;
+    background: $green;
+    border-radius: 30px;
+    color: $whitesmoke;
+    font-size: 3vmin;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      background: $green-hover;
+      box-shadow: $box-shadow;
+    }
+}
+
+@mixin btn {
+     
+        color: #ff4584;
+        font-size: 18px;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+
+        &:hover {
+          color: $black;
+        }
+      
+}
+
+@mixin text-span {
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: $green;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+@mixin input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid $black;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: $green;
+  background: transparent;
+  border-radius: 30px;
+
+  &:focus {
+    border: 2px solid $green-hover;
+  }
+}
