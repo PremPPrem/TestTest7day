@@ -149,7 +149,7 @@ export default {
         // console.log("pageload");
         try {
           // console.log(JSON.parse(localStorage.getItem("rememberLogin")));
-          var jsonLocal = JSON.parse(localStorage.getItem("rememberLogin"));
+          let jsonLocal = JSON.parse(localStorage.getItem("rememberLogin"));
           this.email = jsonLocal.email;
           this.password = jsonLocal.password;
           this.checkRemember = jsonLocal.checkRemember;
